@@ -1,0 +1,5 @@
+NAME=screen
+VERSION=4.5.1
+REVISION=1
+SRC=ftp://ftp.gnu.org/gnu/screen/screen-4.5.1.tar.gz
+SRCMD5=a8c5da2f42f8a18fa4dada2419d1549b

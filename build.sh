@@ -6,7 +6,7 @@
             --with-pty-group=5                \
             --with-sys-screenrc=/etc/screenrc
 sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%" {etc,doc}/*
-make -j $SHED_NUMJOBS
-make DESTDIR=${SHED_FAKEROOT} install
-mkdir -v ${SHED_FAKEROOT}/etc
-install -m 644 etc/etcscreenrc ${SHED_FAKEROOT}/etc/screenrc.default
+make -j $SHED_NUM_JOBS
+make DESTDIR=${SHED_FAKE_ROOT} install
+mkdir -v ${SHED_FAKE_ROOT}/etc
+install -m 644 etc/etcscreenrc ${SHED_FAKE_ROOT}/etc/screenrc.default
